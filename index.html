@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex Color Generator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height:300px;
+            width:300px;
+            display: grid;
+            align-content: center;
+            justify-content: center;
+        }
+        .container{
+           padding:5%;
+           border: 2px solid black;
+           border-radius: 20px;
+           font-size: 1.25em;
+           background-color: white;
+           line-height: 30px;
+           text-align: center;
+        }
+        #btn{
+            background-color: white;
+            color: black;
+            width: 150px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #colorPicker{
+            width:60px;
+            border-radius:10px;
+            cursor: pointer;
+        }
+        #hexCodeBox{
+            text-align: center;
+        }
+        #hexCodeBox:focus{
+            text-align: center;
+            border: 2px solid red;
+        }
+        h3{
+            color: red;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>HTML Color Generator</h3>
+        Click here 	👉 <input type="color" id="colorPicker">
+        <br>
+        <button id="btn" value="hexCode" >Create Hex Code</button>
+        <br>
+        Hex Code is: <input type="text" id="hexCodeBox" placeholder="Hex Value">
+    </div>
+    
+<script src="index.js"></script>
+</body>
+</html>
